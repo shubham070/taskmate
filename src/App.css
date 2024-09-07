@@ -12,6 +12,10 @@ li
     margin-left: 20px;
   }
 }
+
+.delete{
+  background-color: #D82148;
+}
 .sub{
   background-color: #D82148;
   margin: 5px;

@@ -13,6 +13,11 @@ export default function App()
       setCount(count -1);
     }
 
+    function handleDelete(id)
+    {
+      setTasks(tasks.filter(x=>x.id !== id))
+    }
+
   const [count, setCount] = useState(0);
   const [tasks, setTasks] = useState([
     {id: 1, name: "Task 1", completed: true},
@@ -44,7 +49,7 @@ export default function App()
                  <span>{task.id}</span>
                  <span>{task.name}</span>
                  <span>{task.completed ? 'yes' : 'no'}</span>
-                 <button>delete</button>
+                 <button onClick={()=>handleDelete(task.id)} className="delete">delete</button>
               </li>
             ))
           }
