@@ -1,4 +1,6 @@
 import { useState } from "react";
+import Task from './Task';
+
 export default function TaskList(props) {
   const [tasks, setTasks] = useState([
     { id: 1, name: "Task 1", completed: true },
@@ -41,16 +43,9 @@ export default function TaskList(props) {
             <span>Status</span>
             <span>Action</span>
           </li>
-          {tasks.map((task, i) => (
-            <li key={task.id}>
-              <span>{task.id}</span>
-              <span>{task.name}</span>
-              <span>{task.completed ? "yes" : "no"}</span>
-              <button onClick={() => onDelete(i)} className="delete">
-                Delete
-              </button>
-            </li>
-          ))}
+          { tasks.map((task) =>
+          <li key={task.id}><Task task = {task} handleDelete = {onDelete}></Task></li>
+        )}
         </ul>
       </div>
     </div>
