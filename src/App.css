@@ -3,7 +3,15 @@
   margin: 5px;
   width: 100px;
 }
-
+li
+{
+  span {
+    margin: 5px;
+  }
+  button{
+    margin-left: 20px;
+  }
+}
 .sub{
   background-color: #D82148;
   margin: 5px;
