@@ -40,7 +40,7 @@ export default function App()
               </li>
           {
             tasks.map((task) => (
-              <li>
+              <li key = {task.id}>
                  <span>{task.id}</span>
                  <span>{task.name}</span>
                  <span>{task.completed ? 'yes' : 'no'}</span>
