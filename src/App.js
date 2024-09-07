@@ -45,7 +45,7 @@ export default function App() {
           }}
         >
           <input type="text"></input>
-          <button type="submit">Add Record</button>
+          <button className="add" type="submit">Add Record</button>
         </form>
         <ul>
           <li>
@@ -59,7 +59,7 @@ export default function App() {
               <span>{task.id}</span>
               <span>{task.name}</span>
               <span>{task.completed ? "yes" : "no"}</span>
-              <button onClick={() => onDelete(i)}>Delete</button>
+              <button onClick={() => onDelete(i)} className="delete">Delete</button>
             </li>
           ))}
         </ul>
