@@ -1,5 +1,5 @@
 import { useState } from "react";
-export default function TaskList() {
+export default function TaskList(props) {
   const [tasks, setTasks] = useState([
     { id: 1, name: "Task 1", completed: true },
     { id: 2, name: "Task 2", completed: false },
@@ -14,7 +14,7 @@ export default function TaskList() {
 
   return (
     <div className="box">
-      <h2> Task List </h2>
+      <h2> {props.title} </h2>{" "}
       <form
         onSubmit={(e) => {
           e.preventDefault();

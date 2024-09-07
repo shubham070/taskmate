@@ -1,9 +1,14 @@
 header {
-  flex: auto;
+  align-content: center;
+  max-width: auto;
+  margin: 50px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  padding: 10px;
 
   img {
     height: 70px;
-    margin: 20px;
+    margin-left: 20px;
   }
 }
 

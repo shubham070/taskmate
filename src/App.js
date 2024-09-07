@@ -7,8 +7,8 @@ export default function App() {
   return (
     <div>
     <Header/>
-    <Counter/>
-    <TaskList/>
+    <Counter title="Counter Example"/>
+    <TaskList title="Task List"/>
     </div>
   );
 }
