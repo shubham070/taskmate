@@ -1,28 +1,39 @@
-.add{
+header {
+  flex: auto;
+
+  img {
+    height: 70px;
+    margin: 20px;
+  }
+}
+
+.add {
   background-color: #03ba5c;
   margin: 5px;
   width: 100px;
 }
-li
-{
+
+li {
   span {
     margin: 5px;
   }
-  button{
+
+  button {
     margin-left: 20px;
   }
 }
 
-.delete{
+.delete {
   background-color: #D82148;
 }
-.sub{
+
+.sub {
   background-color: #D82148;
   margin: 5px;
   width: 100px;
 }
 
-.box{
+.box {
   max-width: 250px;
   margin: 50px auto;
   border-radius: 5px;
@@ -30,10 +41,11 @@ li
   padding: 10px;
 }
 
-p{
-  font-size:  24px;
+p {
+  font-size: 24px;
   text-align: center;
 }
-.App{
+
+.App {
   min-height: 100vh;
 }
