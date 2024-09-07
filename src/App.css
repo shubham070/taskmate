@@ -1,15 +1,39 @@
+h1 {
+  font-size: 28px;
+  text-align: center;
+  margin: 20px;
+}
+
+a {
+  margin: 5px;
+  ;
+  text-decoration: none;
+  color: black;
+}
+
 header {
-  align-content: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
   max-width: auto;
-  margin: 50px;
-  border-radius: 5px;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-  padding: 10px;
+  margin: auto;
+  border-bottom: 1px solid var(--theme-border);
+  padding: 0px 10px;
+  font-size: 18px;
 
   img {
     height: 70px;
     margin-left: 20px;
   }
+}
+
+footer {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid var(--theme-border);
 }
 
 .add {
@@ -39,11 +63,13 @@ li {
 }
 
 .box {
-  max-width: 250px;
+  max-width: 500px;
   margin: 50px auto;
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   padding: 10px;
+  display: flex;
+  justify-content: space-between;
 }
 
 p {
@@ -52,5 +78,40 @@ p {
 }
 
 .App {
-  min-height: 100vh;
+  text-align: center;
+}
+
+main {
+  min-height: 90vh;
+  margin: auto;
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid var(--theme-border);
+}
+
+button.delete {
+  margin: 1px;
+  border: 0px;
+  border-radius: 5px;
+  background-color: var(--theme-button-delete);
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+button.submit {
+  margin: 1px;
+  border: 0px;
+  border-radius: 5px;
+  background-color: var(--theme-border);
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+button.trigger {
+  border: 0px;
+  border-radius: 5px;
+  background-color: var(--theme-border);
+  color: red;
+  padding: 5px 10px;
+  cursor: pointer;
 }
