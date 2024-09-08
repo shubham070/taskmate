@@ -1,16 +1,16 @@
 import { useCallback, useEffect, useState } from "react";
 
 export default function Products() {
-    const [url, setUrl] = useState("http://localhost:8000/products")
+    const [url, setUrl] = useState("https://my-json-server.typicode.com/shubham070/taskmate/products")
     
     const getFilteredProducts = () =>
     {
-        setUrl("http://localhost:8000/products?Price_lt=200")
+        setUrl("https://my-json-server.typicode.com/shubham070/taskmate/products?Price_lt=200")
     }
 
     const getAllProducts = () =>
         {
-            setUrl("http://localhost:8000/products")
+            setUrl("https://my-json-server.typicode.com/shubham070/taskmate/products")
         }
     
     const getProducts = useCallback(async () => {

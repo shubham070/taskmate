@@ -4,7 +4,7 @@ import Task from './Task';
 import AddTask from './AddTask';
 
 export default function TaskList(props) {
-  const {data, loading} = useFetch("http://localhost:8000/tasks");
+  const {data, loading} = useFetch("https://my-json-server.typicode.com/shubham070/taskmate/tasks");
   const [tasks, setTasks] = useState(null);   
 
   const onDelete = (id) => {
