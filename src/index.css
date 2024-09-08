@@ -1,3 +1,6 @@
+
+
+
 * {
   font-family: Arial, Helvetica, sans-serif;
   margin: 10px;
@@ -14,6 +17,8 @@ li {
   --theme-border: green;
   --theme-button-delete: red;
   --theme-button-submit: blue;
+  --theme-button-default: purple;
+
 }
 
 button {

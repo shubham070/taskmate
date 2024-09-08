@@ -27,22 +27,16 @@ export default function TaskList(props) {
 
     if(loading)  return(    <div className="box"><span>loading....</span></div>)
     else {  return (
+    <div>  
     <div className="box">
-      <h2> {props.title} </h2>
-      {/* <AddTask handleAdd={addTask}/> */}
-      <div>
+      <h2> {props.title} </h2> <hr/>
+      <AddTask handleAdd={addTask}/> 
+    </div>
         <ul>
-          <li>
-            <span>Id</span>
-            <span>Name</span>
-            <span>Status</span>
-            <span>Action</span>
-          </li>
           { data && data.map((task) =>
-          <li key={task.id}><Task task = {task} handleDelete = {onDelete}></Task></li>
+          <li className="box" key={task.id}><Task task = {task} handleDelete = {onDelete}></Task></li>
         )}
         </ul>
       </div>
-    </div>
   );}
 }

@@ -5,9 +5,9 @@ export default function Task(props) {
         <span>{task.id}</span>
         <span>{task.name}</span>
         <span>{task.completed ? "yes" : "no"}</span>
-        {/* <button onClick={() => props.handleDelete(task.id)} className="delete">
+        <button onClick={() => props.handleDelete(task.id)} className="delete">
           Delete
-        </button> */}
+        </button>
     </>
   );
 }

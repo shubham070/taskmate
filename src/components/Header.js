@@ -7,10 +7,10 @@ export default function Header() {
         <img src={logo} alt="logo" />  
       </Link>
       <nav className="navigation">
-          <Link to = "/"> Home </Link>
-          <Link to = "/products"> Products </Link>
-          <Link to = "/tasks"> Tasks </Link>
-          <Link to = "/counter"> Counter </Link>
+          <NavLink to = "/" end> Home </NavLink>
+          <NavLink to = "/products"> Products </NavLink>
+          <NavLink to = "/tasks"> Tasks </NavLink>
+          <NavLink to = "/counter"> Counter </NavLink>
       </nav>
     </header>
   );

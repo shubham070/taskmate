@@ -69,7 +69,7 @@ li {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   padding: 10px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 p {
@@ -79,6 +79,12 @@ p {
 
 .App {
   text-align: center;
+}
+
+nav {
+  .active{
+    background-color: wheat;
+  }
 }
 
 main {
@@ -108,10 +114,11 @@ button.submit {
 }
 
 button.trigger {
+  margin: 1px;
   border: 0px;
   border-radius: 5px;
-  background-color: var(--theme-border);
-  color: red;
+  background-color: var(--theme-button-default);
+  color: white;
   padding: 5px 10px;
   cursor: pointer;
 }
