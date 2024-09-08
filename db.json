@@ -1,0 +1,91 @@
+{
+  "products": [
+    {
+      "Id": 1,
+      "Name": "Laptop",
+      "Price": 999.99,
+      "Description": "A high-performance laptop for all your computing needs.",
+      "ImageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Gateway_of_India.jpg"
+    },
+    {
+      "Id": 2,
+      "Name": "Smartphone",
+      "Price": 699.99,
+      "Description": "A sleek smartphone with the latest features.",
+      "ImageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Bangalore_Palace.jpg"
+    },
+    {
+      "Id": 3,
+      "Name": "Headphones",
+      "Price": 199.99,
+      "Description": "Noise-cancelling headphones for an immersive audio experience.",
+      "ImageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Meenakshi_Amman_Temple.jpg"
+    },
+    {
+      "Id": 4,
+      "Name": "Smartwatch",
+      "Price": 299.99,
+      "Description": "A smartwatch with fitness tracking and notifications.",
+      "ImageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Gateway_of_India.jpg"
+    },
+    {
+      "Id": 5,
+      "Name": "Tablet",
+      "Price": 499.99,
+      "Description": "A versatile tablet for work and play.",
+      "ImageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Bangalore_Palace.jpg"
+    },
+    {
+      "Id": 6,
+      "Name": "Camera",
+      "Price": 799.99,
+      "Description": "A high-resolution camera for capturing stunning photos.",
+      "ImageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Meenakshi_Amman_Temple.jpg"
+    },
+    {
+      "Id": 7,
+      "Name": "Bluetooth Speaker",
+      "Price": 149.99,
+      "Description": "A portable Bluetooth speaker with excellent sound quality.",
+      "ImageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Gateway_of_India.jpg"
+    },
+    {
+      "Id": 8,
+      "Name": "Gaming Console",
+      "Price": 399.99,
+      "Description": "A gaming console for an immersive gaming experience.",
+      "ImageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Bangalore_Palace.jpg"
+    },
+    {
+      "Id": 9,
+      "Name": "Wireless Earbuds",
+      "Price": 129.99,
+      "Description": "Compact and comfortable wireless earbuds with great sound.",
+      "ImageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Meenakshi_Amman_Temple.jpg"
+    },
+    {
+      "Id": 10,
+      "Name": "Fitness Tracker",
+      "Price": 99.99,
+      "Description": "A fitness tracker to monitor your health and activity.",
+      "ImageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Gateway_of_India.jpg"
+    }
+  ],
+  "tasks": [
+    {
+      "id": 1,
+      "name": "Task 1",
+      "completed": true
+    },
+    { 
+        "id": 2, 
+        "name": "Task 2", 
+        "completed": false 
+    },
+    { 
+        "id": 3, 
+        "name": "Task 3", 
+        "completed": false 
+    }
+  ]
+}
