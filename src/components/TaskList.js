@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Task from './Task';
+import AddTask from './AddTask';
 
 export default function TaskList(props) {
   const [tasks, setTasks] = useState([
@@ -8,33 +9,23 @@ export default function TaskList(props) {
     { id: 3, name: "Task 3", completed: false },
   ]);
 
-  const onDelete = (i) => {
-    const del = [...tasks];
-    del.splice(i, 1);
-    setTasks(del);
+    const onDelete = (id) => {
+      setTasks(tasks.filter(task => task.id !== id));
   };
+
+  const addTask = (val)=>{
+    setTasks((task)=> [...task,
+      {
+        id: Math.max(...tasks.map(user => user.id))+1,
+        name: val,
+        completed: "Yes",
+      }]);
+  }
 
   return (
     <div className="box">
-      <h2> {props.title} </h2>{" "}
-      <form
-        onSubmit={(e) => {
-          e.preventDefault();
-          setTasks((prev) => [
-            ...prev,
-            {
-              id: prev[tasks.length - 1].id + 1,
-              name: e.target[0].value,
-              completed: "Yes",
-            },
-          ]);
-        }}
-      >
-        <input type="text"></input>
-        <button className="add" type="submit">
-          Add Record
-        </button>
-      </form>
+      <h2> {props.title} </h2>
+      <AddTask handleAdd={addTask}/>
       <div>
         <ul>
           <li>
