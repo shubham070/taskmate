@@ -1,5 +1,4 @@
 import { useCallback, useEffect, useState } from "react";
-import Icon from "react-crud-icons";
 
 export default function Products() {
     const [url, setUrl] = useState("http://localhost:8000/products")
