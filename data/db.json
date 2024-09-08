@@ -70,5 +70,22 @@
       "Description": "A fitness tracker to monitor your health and activity.",
       "ImageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Gateway_of_India.jpg"
     }
+  ],
+  "tasks": [
+    {
+      "id": 1,
+      "name": "Task 1",
+      "completed": true
+    },
+    { 
+        "id": 2, 
+        "name": "Task 2", 
+        "completed": false 
+    },
+    { 
+        "id": 3, 
+        "name": "Task 3", 
+        "completed": false 
+    }
   ]
 }
