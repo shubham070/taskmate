@@ -2,8 +2,11 @@ import Counter from "./components/Counter";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Products from "./components/Products";
+import ProductDetail from "./components/ProductDetail";
 import TaskList from "./components/TaskList";
 import { Navigate, Route, Routes } from "react-router";
+import Shop from "./components/Shop/Shop";
+import Cart from "./components/Shop/Cart";
 
 export default function App() {
   const admin=false;
@@ -18,7 +21,10 @@ export default function App() {
             path="/products"
             element={<Products title="Products" />}
           ></Route>
+          <Route path="/products/:id" element={<ProductDetail/>}></Route>
           <Route path="/tasks" element={<TaskList title="Tasks" />}></Route>
+          <Route path="/shop" element={<Shop title="Shop" />}></Route>
+          <Route path="/cart" element={<Cart title="Cart" />}></Route>
         </Routes>
       </main>
       <Footer />
