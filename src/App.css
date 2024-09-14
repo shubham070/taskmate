@@ -84,6 +84,7 @@ p {
 nav {
   .active{
     background-color: wheat;
+    box-shadow: 0cqw;
   }
 }
 
