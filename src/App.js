@@ -7,6 +7,7 @@ import TaskList from "./components/TaskList";
 import { Navigate, Route, Routes } from "react-router";
 import Shop from "./components/Shop/Shop";
 import Cart from "./components/Shop/Cart";
+import { CartProvider } from './components/Shop/Context/CartContext';
 
 export default function App() {
   const admin=false;
@@ -14,6 +15,7 @@ export default function App() {
     <div>
       <Header />
       <main>
+      <CartProvider>
         <Routes>
           <Route path="/" element={admin?<Products></Products>:<Navigate to="/"/>}></Route>
           <Route path="/counter" element={<Counter title="Counter" />}></Route>
@@ -26,6 +28,8 @@ export default function App() {
           <Route path="/shop" element={<Shop title="Shop" />}></Route>
           <Route path="/cart" element={<Cart title="Cart" />}></Route>
         </Routes>
+        </CartProvider>
+
       </main>
       <Footer />
     </div>
